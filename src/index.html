@@ -1,5 +1,188 @@
 <html>
-  <body>
-    안녕하세요
-  </body>
+<link rel="stylesheet" href="./style.scss" />
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400&display=swap" rel="stylesheet">
+
+<body>
+  <div id="container">
+    <div id="side-container">
+      <div id="profile-container">
+        <h2 class="title">Profile</h2>
+        <img id="profile-image" src="images/profile_image.jpg" width="300px" />
+        <label>- 가평 산골 어딘가에서</label>
+
+        <p id="name">김환진</p>
+        <p id="name-english">pandajiny</p>
+
+        <div id="contacts-container">
+          <h3 class="title">Contacts</h3>
+          <p id="phone-number">phone : <label>+82 10-7556-9094</label></p>
+          <p id="email">email: <label>astic1764@gmail.com</label></p>
+        </div>
+
+        <div id="link-container">
+          <h3>References</h3>
+          <label>Github</label>
+          <p>
+            <a id="github-link">https://github.com/pandajiny</a>
+          </p>
+        </div>
+        <div id="experience-container">
+          <h3>Expreience</h3>
+          <p><label>[2016-2019]</label> 수원 하이텍고등학교 졸업</p>
+          <p><label>[2018]</label> 마이다스 챌린지 고등부 수상</p>
+          <p><label>[2019-2020]</label> 삼성 반도체 설비 엔지니어</p>
+        </div>
+      </div>
+    </div>
+    <div id="main-container">
+      <div id="welcome-container">
+        <h1 class="title">Welcome!</h1>
+        <h3 class="paragraph">- 공부하는 개발자 김환진의 블로그.</ㅗ>
+      </div>
+      <div id="introduce-container">
+        <h3 class="title">개발 경력 0년차, 풀스택을 지망하는 웹 개발자 입니다.</h3>
+        <p>&nbsp 이전 직장에서 설비 엔지니어로 근무하다 개발자를 꿈꾸며 퇴사했습니다. HTML부터 서버까지 기교보다는 기초를 쌓아가며 성장하고 싶었습니다.</p>
+        <p>&nbsp React, NodeJS, SQL Database, .NET Framework 등 웹을 개발하는데 기초적이면서도 트렌디한 기술들을 공부해왔습니다. 이를 토대로 스스로 필요한
+          어플리케이션을 개발합니다. </p>
+      </div>
+      <div id="project-list-container">
+        <div id="project-container">
+          <h3>Scheduler Project</h3>
+          <ul>
+            <li>
+              <a href="https://github.com/pandajiny/scheduler">Github Link</a>
+            </li>
+            <li>
+              <a href="https://pandajiny.github.io/scheduler/">App Link</a>
+            </li>
+            <li>
+              <a href="https://pandajiny.github.io/scheduler/introduce.html">Intro page</a>
+            </li>
+            <li>
+              <p>Nest JS Backend와 MYSQL을 이용한 스케쥴러 어플리케이션</p>
+            </li>
+            <li>
+              <p>Naver Cloud Platform의 Linux Server를 Docker를 통해 관리</p>
+            </li>
+            <li>
+              <p>letsencrypt를 통한 https 인증 및 sha256 + salt hasing & JWT를 이용한 로그인 구현</p>
+            </li>
+          </ul>
+        </div>
+        <div id="project-container">
+          <h3>Yogurtravel - travel planner</h3>
+          <ul>
+            <li>
+              <a>Github Link</a>
+            </li>
+            <li>
+              <a>App Link</a>
+            </li>
+            <li>
+              <p>Firebase를 Backend로 사용한 여행 플래너</p>
+            </li>
+            <li>
+              <p>React JS를 통한 Frontend</p>
+            </li>
+            <li>
+              <p> Google Map APIS를 이용한 실제 장소 검색 및 위치 정보 기반 Plan Item </p>
+            </li>
+          </ul>
+        </div>
+        <p></p>
+      </div>
+      <div id="stack-list-container">
+        <h2 class="title">개발 스택</h2>
+
+        <div class="stack-container">
+
+          <h3>웹 개발의 기초</h3>
+          <div class="images-container">
+            <img id="html-logo" src="images/html-logo.png">
+            <img id="css-logo" src="images/css-logo.png">
+            <img id="js-logo" src="images/js-logo.png">
+          </div>
+          <p>&nbsp HTML, CSS, JAVASCRIPT는 웹 개발의 기초입니다. 프레임워크 없이 Plain Javascript를 이용하여 개발한 경험은 웹의 기본 지식을 익히는데 큰 도움이
+            되었습니다.</p>
+        </div>
+
+        <div class="stack-container">
+          <h3>한 걸음 더</h3>
+          <div class="images-container">
+            <img id="parcel-logo" src="images/parcel-logo.png">
+            <img id="scss-logo" src="images/scss-logo.svg">
+            <img id="ts-logo" src="images/ts-logo.png">
+          </div>
+          <p>&nbsp 기존의 느슨한 타입을 가지고 있는 Javascript를 Typescript로 대체했습니다. 현재는 Node JS, React JS를 포함한 모든 Javascript 프로젝트를
+            Typescript를 이용해서 구현합니다.
+          </p>
+        </div>
+
+        <div class="stack-container">
+          <h3>Framework & Runtime</h3>
+          <div class="images-container">
+            <img id="nodejs-logo" src="images/nodejs-logo.png">
+          </div>
+          <p>&nbsp Node JS는 Javsacript를 브라우저 밖에서도 구동시켜줍니다. npm모듈과 각종 프레임워크를 사용해 Frontend,
+            Backend를 구현해왔습니다.</p>
+
+          <div class="images-container">
+            <img id="react-logo" src="images/react-logo.png">
+          </div>
+          <p>&nbsp React를 사용하여 Frontend를 개발했습니다. React 개발을 Functional Programming으로 가능케 하는 Hooks API를 적극적으로 사용하여,
+            유동적인 웹 어플리케이션을 빌드하는데 React를 사용했습니다.</p>
+
+          <div class="images-container">
+            <img id="nestjs-logo" src="images/nestjs-logo.png">
+          </div>
+          <p>&nbsp Nest JS를 이용하여 Backend를 개발했습니다. Express JS와 대비되는 강제되는 Module 구조를 통해 빌드하며 코드의 재사용성에 대해 고민하고, 직관적이며
+            Error를 덜 야기하는 어플리케이션을 개발하려 노력했습니다.</p>
+        </div>
+
+        <div class="stack-container">
+          <h3>Server & Database</h3>
+          <div class="images-container">
+            <img id="firebase-logo" src="images/firebase-logo.png">
+          </div>
+          <p>&nbsp Google이 개발한 Serverless 기반의 Firebase app은 다양한 Backend API를 제공합니다. 이를 통해 Web Hosting, NOSQL-DB,
+            Serverless
+            Functions 로 구성되어 있는 웹 어플리케이션을 빌드했습니다.</p>
+
+          <div class="images-container">
+            <img id="naver-cloud-logo" src="images/naver-cloud-logo.png">
+          </div>
+          <p>&nbsp Naver Cloud Platform 서비스를 사용하여 Linux Ubuntu 서버를 호스팅 중입니다. 해당 서버에 Nest JS와 MYSQL을 구동시켜 웹 어플리케이션
+            Backend를 호스팅했습니다.</p>
+
+          <div class="images-container">
+            <img id="docker-logo" src="images/docker-logo.png">
+          </div>
+          <p>&nbsp Docker Container를 통해 Server를 관리했습니다. docker-compose 등의 기능을 통해 개발 환경에서의 테스트 및 서버로의 배포까지 전반적 과정을
+            Docker를 통해 개발합니다.</p>
+
+
+          <div class="images-container">
+            <img id="mysql-logo" src="images/mysql-logo.svg">
+            <img id="mongodb-logo" src="images/mongodb-logo.png">
+          </div>
+          <p>&nbsp SQL Database, NOSQL Database 기반인 Mysql, mongodb 를 사용하여 Database를 구축, Backend Server와 연결하여 개발했습니다.</p>
+
+
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+
+    <!-- <div id="footer">
+      <h1>SO FOOTER</h1>
+    </div> -->
+</body>
+
 </html>

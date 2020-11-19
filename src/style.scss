@@ -1,0 +1,329 @@
+$color-background: rgb(255, 236, 208);
+
+$color-text: rgb(75, 75, 75);
+$color-black: rgb(0, 0, 0);
+
+#container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  #side-container {
+    flex: 3;
+    background-color: $color-background;
+
+    display: flex;
+    flex-direction: column;
+
+    > * {
+      align-self: flex-end;
+      text-align: right;
+      margin-right: 16px;
+    }
+
+    #profile-container {
+      margin-top: 140px;
+
+      > .title {
+        padding-right: 16px;
+      }
+
+      #profile-image {
+        margin-top: 8px;
+        border-radius: 8px;
+      }
+
+      label {
+        font-style: italic;
+        padding-top: 4px;
+      }
+
+      #name {
+        color: $color-black;
+        margin-top: 60px;
+        font-weight: 600;
+      }
+
+      #name-english {
+        margin-top: -4px;
+        font-weight: 600;
+        font-style: italic;
+      }
+
+      h3 {
+        margin-top: 24px;
+      }
+
+      #contacts-container {
+        > .title {
+          margin-bottom: 4px;
+        }
+
+        p {
+          font-style: italic;
+          font-weight: 600;
+          font-size: 13px;
+
+          label {
+            display: inline;
+            font-size: 16px;
+          }
+        }
+      }
+
+      #link-container {
+        margin-top: 16px;
+        label {
+          margin-top: 8px;
+          font-weight: 600;
+          margin-bottom: 4px;
+        }
+        a {
+          color: $color-black;
+        }
+      }
+
+      #experience-container {
+        p {
+          padding-top: 4px;
+          font-size: 16px;
+        }
+        label {
+          font-style: normal;
+        }
+      }
+    }
+  }
+
+  #main-container {
+    flex: 6;
+
+    padding-bottom: 400px;
+
+    > * {
+      margin-left: 32px;
+    }
+
+    #welcome-container {
+      margin-top: 60px;
+
+      .title {
+        margin-left: 16px;
+      }
+
+      .paragraph {
+        padding-left: 200px;
+      }
+    }
+
+    #introduce-container {
+      margin-top: 128px;
+
+      width: 800px;
+
+      .title {
+        padding-left: 16px;
+        padding-bottom: 8px;
+        font-weight: 600;
+        color: $color-black;
+      }
+
+      p {
+        padding-bottom: 16px;
+      }
+
+      #links {
+        width: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+
+    #project-list-container {
+      #project-container {
+        margin-top: 76px;
+        h3 {
+          font-weight: 500;
+          font-size: 22px;
+          padding-left: 32px;
+          padding-top: 8px;
+          font-style: italic;
+        }
+        p {
+          margin-top: 8px;
+        }
+      }
+    }
+
+    #stack-list-container {
+      margin-top: 200px;
+      width: 800px;
+
+      .title {
+        padding-left: 8px;
+      }
+
+      h3 {
+        font-style: italic;
+        padding-left: 24px;
+        margin-top: 16px;
+      }
+
+      p {
+        margin-top: 16px;
+      }
+
+      .stack-container {
+        margin-top: 64px;
+        padding-bottom: 64px;
+      }
+
+      .images-container {
+        width: 500px;
+
+        margin-top: 32px;
+        margin-bottom: 32px;
+
+        display: flex;
+        flex-direction: row;
+
+        img {
+          width: 100px;
+          height: 100px;
+          padding-right: 60px;
+        }
+
+        #html-logo {
+          width: 100px;
+          height: 100px;
+        }
+        #css-logo {
+          width: 70px;
+          height: 100px;
+        }
+
+        #js-logo {
+          width: 110px;
+          height: 100px;
+        }
+        #parcel-logo {
+          width: 120px;
+          height: 130px;
+          padding-right: 40px;
+        }
+        #scss-logo {
+          padding-top: 20px;
+          padding-right: 50px;
+        }
+        #ts-logo {
+          padding-top: 20px;
+          height: 90px;
+          width: 90px;
+        }
+        #nodejs-logo {
+          padding-left: 16px;
+          width: 300px;
+          height: 80px;
+        }
+        #react-logo {
+          width: 250px;
+          height: 150px;
+          margin-bottom: -32px;
+        }
+
+        #nestjs-logo {
+          padding-left: 8px;
+          width: 240px;
+          height: 110px;
+        }
+
+        #firebase-logo {
+          width: 350px;
+          height: 100px;
+        }
+        #naver-cloud-logo {
+          padding-left: 16px;
+          width: 190px;
+          height: 150px;
+        }
+        #docker-logo {
+          padding: 16px;
+          width: 320px;
+          height: 80px;
+        }
+        #mysql-logo {
+          width: 200px;
+          height: 150px;
+        }
+        #mongodb-logo {
+          padding-left: 12px;
+          padding-top: 48px;
+          width: 300px;
+          height: 80px;
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  margin-top: 200px;
+  height: 1000px;
+}
+
+html,
+body {
+  margin: 0px;
+  font-family: "Noto Serif KR", serif;
+  color: $color-text;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+div,
+label {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  color: $color-black;
+  font-size: 100px;
+}
+
+h2 {
+  color: $color-black;
+  font-size: 36px;
+}
+
+h3 {
+  color: $color-black;
+  font-size: 24px;
+}
+
+p {
+  font-size: 20px;
+}
+
+li {
+  font-size: 18px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+a {
+  font-size: 16px;
+  font-weight: 600;
+  font-style: italic;
+  text-decoration: none;
+  color: $color-text;
+  cursor: pointer;
+}
